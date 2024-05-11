@@ -1,0 +1,66 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #202020; /* Fundal întunecat pentru joc */
+    color: white; /* Text alb pentru vizibilitate */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gameCanvas {
+    background-color: #0d0d0d;
+    display: block; /* Asigură că nu există spațiu extra în jurul canvasului */
+    margin-bottom: 20px;
+}
+
+#score-container {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button.btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    button.btn-primary:active {
+        background-color: #00408b;
+        transform: translateY(2px);
+    }
+
+#gameTitle {
+    font-family: 'Oswald', sans-serif; /* Aplică fontul Oswald */
+    font-weight: 700; /* 700 este grosimea pentru bold în multe fonturi */
+    font-size: 48px; /* Dimensiune mare pentru impact vizual */
+    color: #FFF; /* Culoare albă pentru vizibilitate pe fundal închis */
+    text-align: center; /* Centrarea titlului */
+    margin-top: 20px; /* Spațiu de sus pentru a nu lipi de canvas */
+}
+#gameCanvas {
+    max-width: 100%; /* Asigură că canvasul nu depășește lățimea viewport-ului */
+    aspect-ratio: 5 / 3; /* Menține o rată de aspect, aici 5:3, potrivită pentru joc */
+}
+
+button.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}

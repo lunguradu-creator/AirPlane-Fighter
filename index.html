@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Fighter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container" class="container">
+        <h1 id="gameTitle">
+            <img src="images/logo.png" alt="Airplane Fighter Logo" style="vertical-align: middle; height: 100px; margin-right: 10px;">
+            Airplane Fighter
+        </h1>
+        <canvas id="gameCanvas"></canvas>
+        <div id="score-container" class="text-center">
+            Scor: <span id="score">0</span> | Timp: <span id="gameTime">00:00</span> | Plane Name: <span id="planeName">Night Raptor</span>
+        </div>
+        <button id="newGameButton" type="button" class="btn btn-primary">New Game</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
